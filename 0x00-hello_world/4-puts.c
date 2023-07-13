@@ -1,8 +1,12 @@
 #include <stdio.h>
 /**
-* main - A program that prints a value
-* return 0 (Success)
-*/
+ * main - program that prints value
+ * 
+ * Description: prints Programming is like building a multilingual puzzle
+ * @parameter: no
+ * 
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 puts("\"Programming is like building a multilingual puzzle");
