@@ -8,6 +8,7 @@ int main(void)
 {
 	int a;
 	char B;
+
 	a = 0;
 	B = 'a';
 	while
