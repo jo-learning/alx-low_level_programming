@@ -6,23 +6,24 @@
  */
 int main(void)
 {
-        char a;
+	char a;
 	char B;
-        a = 'a';
+
+	a = 'a';
 	B = 'A';
-        while
-                (a <= 'z')
-                {
-                        putchar(a);
-                        a++;
+	while
+		(a <= 'z')
+		{
+			putchar(a);
+			a++;
                 }
 	while
-                (B <= 'Z')
-                {
-                        putchar(a);
-                        B++;
-                }
+		(B <= 'Z')
+		{
+			putchar(B);
+			B++;
+		}
 	putchar('\n');
-        /* your code goes there */
-        return (0);
+	/* your code goes there */
+	return (0);
 }
