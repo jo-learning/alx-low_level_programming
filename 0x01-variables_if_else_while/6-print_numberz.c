@@ -7,6 +7,7 @@
 int main(void)
 {
 	int a;
+
 	a = 0;
 	while
 		(a <= 10)
@@ -14,7 +15,7 @@ int main(void)
 			putchar(a);
 			a++;
 		}
-	putchar('\n')
+	putchar('\n');
 	/* your code goes there */
 	return (0);
 }
