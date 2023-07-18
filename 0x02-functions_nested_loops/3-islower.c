@@ -1,6 +1,7 @@
 #include "main.h"
 /**
- * main - program that prints value
+ * _islower -function that checks for lowercase character
+ * @c: integer number
  * Description: with proper grammar, but the outcome is a piece of art,
  * Return: Always 0 (Success)
  */
