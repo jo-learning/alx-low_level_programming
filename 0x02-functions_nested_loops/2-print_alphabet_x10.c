@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * main - program that prints value
+ * print_alphabet_x10 -function that prints 10 times the alphabet
  * Description: with proper grammar, but the outcome is a piece of art,
  * Return: Always 0 (Success)
  */
@@ -10,7 +10,7 @@ void print_alphabet_x10(void)
 	int i;
 
 	i = 0;
-	while (i < 20)
+	while (i < 10)
 	{
 		for (ch = 'a'; ch <= 'z'; ch++)
 		{
