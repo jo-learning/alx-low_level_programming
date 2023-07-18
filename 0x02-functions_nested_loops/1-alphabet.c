@@ -1,6 +1,6 @@
 #include "main.h"
-/*
- * main - print_alphabet
+/**
+ * print_alphabet -print_alphabet
  * Description: make the alphabet
  * Return: Always 0
  */
@@ -11,5 +11,4 @@ void print_alphabet(void)
 	for (ch = 'a'; ch <= 'z'; ch++)
 		_putchar(ch);
 	_putchar('\n');
-	
 }
