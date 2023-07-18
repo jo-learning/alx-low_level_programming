@@ -1,6 +1,8 @@
 #include "main.h"
 /**
- * main - program that prints value
+ * add -function that adds two integers and returns the result
+ * @n1: integer
+ * @n2: integer
  * Description: with proper grammar, but the outcome is a piece of art,
  * Return: Always 0 (Success)
  */

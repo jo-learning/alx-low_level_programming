@@ -1,6 +1,7 @@
 #include "main.h"
 /**
- * main - program that prints value
+ * _abs - function that computes the absolute value of an integer
+ * @c: integer
  * Description: with proper grammar, but the outcome is a piece of art,
  * Return: Always 0 (Success)
  */

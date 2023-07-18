@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * main - program that prints value
+ * print_to_98 -function that prints all natural numbers from n to 98
  * Description: with proper grammar, but the outcome is a piece of art,
  * Return: Always 0 (Success)
  */

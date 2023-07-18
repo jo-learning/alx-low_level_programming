@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * main - program that prints value
+ * times_table -function that prints the 9 times table, starting with 0
  * Description: with proper grammar, but the outcome is a piece of art,
  * Return: Always 0 (Success)
  */
