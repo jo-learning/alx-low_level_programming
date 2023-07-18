@@ -1,6 +1,7 @@
 #include "main.h"
 /**
- * main - program that prints value
+ * print_sign -function that prints the sign of a number
+ * @n: integer
  * Description: with proper grammar, but the outcome is a piece of art,
  * Return: Always 0 (Success)
  */
