@@ -30,6 +30,8 @@ char *create_buffer(char *file)
 /**
  * close_file - Closes file descriptors.
  * @Ofile: The file descriptor to be closed.
+ *
+ * Return: nothing b/c it is void
  */
 void close_file(int Ofile)
 {
