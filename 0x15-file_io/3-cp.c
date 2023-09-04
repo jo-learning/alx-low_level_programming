@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 char *create_buffer(char *file);
-void close_file(int Ofile);
+void close_file(int fd);
 
 /**
  * create_buffer - Allocates 1024 bytes for a buffer.
@@ -19,7 +19,8 @@ char *create_buffer(char *file)
 
 	if (buffer == NULL)
 	{
-		dprintf(STDERR_FILENO,"Error: Can't write to %s\n", file);
+		dprintf(STDERR_FILENO,
+			"Error: Can't write to %s\n", file);
 		exit(99);
 	}
 
@@ -28,19 +29,17 @@ char *create_buffer(char *file)
 
 /**
  * close_file - Closes file descriptors.
- * @Ofile: The file descriptor to be closed.
- *
- * Return: nothing b/c it is void
+ * @fd: The file descriptor to be closed.
  */
-void close_file(int Ofile)
+void close_file(int fd)
 {
-	int o;
+	int c;
 
-	o = close(Ofile);
+	c = close(fd);
 
-	if (o == -1)
+	if (c == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close file %d\n", Ofile);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
 		exit(100);
 	}
 }
@@ -76,7 +75,8 @@ int main(int argc, char *argv[])
 	do {
 		if (from == -1 || r == -1)
 		{
-			dprintf(STDERR_FILENO,"Error: Can't read from file %s\n", argv[1]);
+			dprintf(STDERR_FILENO,
+				"Error: Can't read from file %s\n", argv[1]);
 			free(buffer);
 			exit(98);
 		}
@@ -84,7 +84,8 @@ int main(int argc, char *argv[])
 		w = write(to, buffer, r);
 		if (to == -1 || w == -1)
 		{
-			dprintf(STDERR_FILENO,"Error: Can't write to %s\n", argv[2]);
+			dprintf(STDERR_FILENO,
+				"Error: Can't write to %s\n", argv[2]);
 			free(buffer);
 			exit(99);
 		}
@@ -100,5 +101,4 @@ int main(int argc, char *argv[])
 
 	return (0);
 }
-
 
