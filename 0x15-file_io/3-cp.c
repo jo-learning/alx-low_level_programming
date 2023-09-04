@@ -39,7 +39,7 @@ void close_file(int Ofile)
 
 	if (c == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
+		dprintf(STDERR_FILENO, "Error: Can't close file %d\n", Ofile);
 		exit(100);
 	}
 }
